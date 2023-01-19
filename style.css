@@ -7,9 +7,10 @@
 
 
 header {
-    height: 100vh;
+    height: 100vw;
     width: 100%;
     background-image: url("https://images.unsplash.com/photo-1590880449155-b54f958ce314?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGlyYXRlbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
 }
 
 #navbar_company {
@@ -50,7 +51,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 #game_navigation {
@@ -111,7 +114,6 @@ header {
 }
 
 #header_content {
-    padding-top: 7em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -120,7 +122,7 @@ header {
 #game_logo {
     background-color: blueviolet;
     align-self: center;
-    max-height: 7.5em;
+    max-height: 3vw;
 }
 
 #head_anouncment {
@@ -275,6 +277,7 @@ margin-top: 2vw;
 }
 
 .extra figure{
+    z-index: 1;
     position: relative;
     margin-top: 2vw;
     border: solid grey 2px;
@@ -287,6 +290,7 @@ margin-top: 2vw;
 }
 
 .extra figure>div{
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
