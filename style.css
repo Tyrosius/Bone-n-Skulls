@@ -7,8 +7,133 @@
 
 
 header {
-    position: relative;
+    height: 100vh;
+    width: 100%;
     background-image: url("https://images.unsplash.com/photo-1590880449155-b54f958ce314?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGlyYXRlbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+#navbar_company {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+#comp_icon {
+    background-color: aqua;
+    flex-basis: 5em;
+}
+
+#comp_navigation {
+    flex-basis: 50%;
+}
+
+#comp_navigation ul {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#comp_navigation li {
+    padding: 1em;
+    color: white;
+    list-style: none;
+    font-size: 1.5em;
+}
+
+#user_image {
+    max-block-size: 5em;
+}
+
+
+#navbar_game {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+}
+
+#game_navigation {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 2%;
+}
+
+#game_navigation #game_icon {
+    flex-basis: 10%;
+    background-color: blue;
+}
+
+#game_navigation ul {
+    flex-basis: 50%;
+    display: flex;
+    list-style: none;
+}
+
+#game_navigation li a {
+    padding: 1em;
+    color: white;
+}
+
+#game_navigation #registry a {
+    padding: 0em 2em;
+}
+
+#game_navigation #registry #sign_up {
+    color: yellow;
+}
+
+#game_navigation #registry #preorder {
+    background-color: yellow;
+    color: black;
+}
+
+#side_nav {
+    padding-top: 40vh;
+    /*visibility: hidden;*/
+}
+
+#side_nav:hover {
+    visibility: visible;
+}
+
+#side_nav li {
+    padding: 0.2em;
+    margin: 0.2em;
+}
+
+#side_nav a {
+    color: antiquewhite;
+    background-color: black;
+    padding: 0.2em;
+    font-size: 0.9em;
+}
+
+#header_content {
+    padding-top: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#game_logo {
+    background-color: blueviolet;
+    align-self: center;
+    max-height: 7.5em;
+}
+
+#head_anouncment {
+    align-self: center;
+    flex-basis: 50%;
+    max-width: 30%;
+    color: whitesmoke;
+    font-size: 2em;
+}
+
+#pseudo_video {
+    max-width: 30%;
+    align-self: flex-end;
 }
 
 /** gerald **/
@@ -107,7 +232,7 @@ margin-top: 2vw;
     margin-top: 0.5vw;
 }
 
-.news section{
+.news section {
     width: 50vw;
 }
 
@@ -208,20 +333,137 @@ flex-basis: 50%;
 
 
 
-
 /** Nico **/
 
 
-footer {
-    background-color: black;
+.preorder {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: (41, 41, 41);
+    color: white;
 }
 
-.vorbestellen {}
+.vorbestellen{
+    width: 100%;
+    background-color: rgb(117, 116, 116);
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
-.socials {}
+.vorbestellen > img{
+    border: solid 1px red;
+    justify-content: flex-end;
+}
 
-.corporate {}
+
+.vorbestellen > figcaption{
+    border: solid orange 1px;
+    float: left;
+    
+    
+}
+
+.vorbestellen > p{
+    border: solid orange 1px;
+    float: left;
+    
+}
+
+
+.livephase{
+    width: 100%;
+    background-color: rgb(41,41,41);
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.livephase > img{
+    justify-content: flex-start;
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: rgb(8, 110, 15);
+}
+
+.socials {
+    padding: 1em;
+    background-color: rgb(88, 36, 36);
+    display: flex;
+     
+
+}
+
+.socials > h2{
+    color: white;
+    font-size: 0.75em;
+}
+
+.socials > a > img{
+    width: 30px;
+    height: 30px;
+    justify-content: space-around;
+}
+
+
+.spalten{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-end; */
+    max-width: 100%;
+}
+
+
+.corporate {
+    background-color: rgb(26, 30, 45) ;
+    width: 25%;
+    justify-content: flex-start;
+    
+}
+
+.corporate > a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+}
+
 
 .brand {
+background-color: black;
+    width: 33%;
+    
+    display: flex;
+    
+}
+
+.brand{
+    color: white;
+}
+
+.studios > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+ 
+.plattformen{
+    background-color: grey;
+    width: 50%;
+    color: white;
+    align-items: baseline;
+}
+
+.plattformen > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
 }
 
