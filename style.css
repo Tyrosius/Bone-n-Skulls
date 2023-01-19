@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -24,17 +25,132 @@ header {
 /** Nico **/
 
 
-footer {
-    background-color: black;
+.preorder {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: (41, 41, 41);
+    color: white;
 }
 
-.vorbestellen {}
+.vorbestellen{
+    width: 100%;
+    background-color: rgb(117, 116, 116);
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
-.socials {}
+.vorbestellen > img{
+    border: solid 1px red;
+    justify-content: flex-end;
+}
 
-.corporate {}
+
+.vorbestellen > figcaption{
+    border: solid orange 1px;
+    float: left;
+    
+    
+}
+
+.vorbestellen > p{
+    border: solid orange 1px;
+    float: left;
+    
+}
+
+
+.livephase{
+    width: 100%;
+    background-color: rgb(41,41,41);
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.livephase > img{
+    justify-content: flex-start;
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: rgb(8, 110, 15);
+}
+
+.socials {
+    padding: 1em;
+    background-color: rgb(88, 36, 36);
+    display: flex;
+     
+
+}
+
+.socials > h2{
+    color: white;
+    font-size: 0.75em;
+}
+
+.socials > a > img{
+    width: 30px;
+    height: 30px;
+    justify-content: space-around;
+}
+
+
+.spalten{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-end; */
+    max-width: 100%;
+}
+
+
+.corporate {
+    background-color: rgb(26, 30, 45) ;
+    width: 25%;
+    justify-content: flex-start;
+    
+}
+
+.corporate > a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+}
 
 .brand {
-    box-sizing: border-box;
+    background-color: black;
+    width: 33%;
+    
+    display: flex;
+    
 }
 
+.brand{
+    color: white;
+}
+
+.studios > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+ 
+.plattformen{
+    background-color: grey;
+    width: 50%;
+    color: white;
+    align-items: baseline;
+}
+
+.plattformen > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
