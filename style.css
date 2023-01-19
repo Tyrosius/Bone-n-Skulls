@@ -1,0 +1,10 @@
+.news{
+    color: white;
+    display: flex;
+    background-color: rgb(41, 41, 41); 
+    list-style: none;
+}
+
+.news section{
+    width: 50vw;
+}
