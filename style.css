@@ -13,12 +13,33 @@ header {
 
 /** gerald **/
 
+.content{
+    background-color: rgb(41, 41, 41);
+}
+
+.content button{
+    background-color: rgb(197, 163, 60);
+    border: none;
+    height: 30px;
+    width: 100px;
+   
+}
+
+.content button:hover{
+    background-color: white;
+    color: black;   
+}
+
 p{
     color: rgb(203, 203, 203);
 }
 
 article{
     background-color: rgb(41, 41, 41);
+}
+
+article:nth-child(n+1){
+    padding-top: 8vw;
 }
 
 article h1{
@@ -38,17 +59,13 @@ article section div:nth-child(n + 1){
 
 article section div:last-child{
  display: flex;
+ flex-direction: column;
  justify-content: flex-end;
 }
-
 article section div:last-child button{
-    height: 30px;
-    width: 100px;
-    background-color: rgb(197, 163, 60);
-    border: none;
-   }
-   
 
+    align-self: center;
+   }
 
 article h3{
     font-size: 2vw;
@@ -69,6 +86,11 @@ article h4{
 .newsgroup> div{
 margin-top: 2vw;
 }
+
+.topnews>figure{
+    padding-top: 2vw;
+}
+
 
 .newsgroup img{
     width: 25vw;
@@ -110,30 +132,36 @@ margin-top: 2vw;
     display: flex;
 }
 
+
+
 .news img{
     border: solid rgb(106, 106, 106) 2px;
 }
 
-#extra{
+.extra > h2{
+    padding-bottom: 3vw;
+    font-size: 4vw;
+}
+
+.extra{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#extra figure{
+.extra figure{
     position: relative;
     margin-top: 2vw;
     border: solid grey 2px;
-
 }
 
-#extra figure img{
+.extra figure img{
     width: 80vw;
     height: 30vw;
     border: none;
 }
 
-#extra figure>div{
+.extra figure>div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,18 +177,36 @@ margin-top: 2vw;
     transform: translate(-50%, -50%);
 }
 
-
-#extra figure>div>p{
+.extra figure>div>p{
     padding-top: 2vw;
 }
-
-
 /** Worldbuilding**/
+
+#worldbuilding{
+    margin: 5vw;
+
+}
 
 #worldbuilding section{
     display: flex;
-
 }
+
+#worldbuilding section>*:nth-child(n){
+flex-basis: 50%;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #news,#worldbuilding section{
+        flex-direction: column;
+    
+    }
+     
+}
+
+
+
 
 
 /** Nico **/
