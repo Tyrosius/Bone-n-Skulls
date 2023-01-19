@@ -137,16 +137,201 @@ header {
 }
 
 /** gerald **/
-.news {
+
+.content{
+    background-color: rgb(41, 41, 41);
+}
+
+.content button{
+    background-color: rgb(197, 163, 60);
+    border: none;
+    height: 30px;
+    width: 100px;
+   
+}
+
+.content button:hover{
+    background-color: white;
+    color: black;   
+}
+
+p{
+    color: rgb(203, 203, 203);
+}
+
+article{
+    background-color: rgb(41, 41, 41);
+}
+
+article:nth-child(n+1){
+    padding-top: 8vw;
+}
+
+article h1{
+   font-size: 2rem;
+   align-self: center;
+   padding: 0vw 0 3vw 0;
+   color: white;
+}
+
+article h2,h3,a{
+    color: rgb(197, 163, 60);
+}
+
+article section div:nth-child(n + 1){
+    margin-top: 2vw;
+}
+
+article section div:last-child{
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+}
+article section div:last-child button{
+
+    align-self: center;
+   }
+
+article h3{
+    font-size: 2vw;
+}
+
+article h4{
+    font-size: 2rem;
+}
+
+.news{
+
+    padding-top: 2vw;
     color: white;
     display: flex;
-    background-color: rgb(41, 41, 41);
+    align-items: flex-start;
+}
+
+.newsgroup> div{
+margin-top: 2vw;
+}
+
+.topnews>figure{
+    padding-top: 2vw;
+}
+
+
+.newsgroup img{
+    width: 25vw;
+    height: 15vw;
+}
+
+.newsgroup>div>ul{
+    margin-top: 2vw;
     list-style: none;
+    margin-left: 1vw;
+}
+
+.newsgroup>div>ul>li{
+    margin-top: 0.5vw;
 }
 
 .news section {
     width: 50vw;
 }
+
+.topnews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3vw;
+    width: 80%;
+    height: 50%;
+}
+
+.topnews> div{
+    padding: 2vw 0 0 4vw;
+}
+
+.topnews>figure>img{
+    width: 40vw;
+    height: 20vw;
+}
+.newsgroup div{
+    display: flex;
+}
+
+
+
+.news img{
+    border: solid rgb(106, 106, 106) 2px;
+}
+
+.extra > h2{
+    padding-bottom: 3vw;
+    font-size: 4vw;
+}
+
+.extra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.extra figure{
+    position: relative;
+    margin-top: 2vw;
+    border: solid grey 2px;
+}
+
+.extra figure img{
+    width: 80vw;
+    height: 30vw;
+    border: none;
+}
+
+.extra figure>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.extra figure>div>p{
+    padding-top: 2vw;
+}
+/** Worldbuilding**/
+
+#worldbuilding{
+    margin: 5vw;
+
+}
+
+#worldbuilding section{
+    display: flex;
+}
+
+#worldbuilding section>*:nth-child(n){
+flex-basis: 50%;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #news,#worldbuilding section{
+        flex-direction: column;
+    
+    }
+     
+}
+
+
+
 
 /** Nico **/
 
@@ -252,7 +437,7 @@ footer {
 
 
 .brand {
-    background-color: black;
+background-color: black;
     width: 33%;
     
     display: flex;
