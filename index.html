@@ -12,7 +12,7 @@
 
 <body>
     <!--florian-->
-    <header>
+    <header id="top">
         <div id="navbar_company">
             <img id="comp_icon" src="" alt="">
             <nav id="comp_navigation">
@@ -23,33 +23,51 @@
                     <li>Hilfe</li>
                 </ul>
             </nav>
-            <img id="user_image" src="" alt="">
+            <img id="user_image"
+                src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80"
+                alt="">
         </div>
 
         <div id="navbar_game">
-            <img id="game_icon" src="" alt="">
+
             <nav id="game_navigation">
+                <img id="game_icon" src="" alt="">
                 <ul>
-                    <li><a href="">Neuigkeiten</a></li>
-                    <li><a href="">Insider-Programm</a></li>
-                    <li><a href="">Digitales Artbook und Soundtrack</a></li>
+                    <li><a href="#news">Neuigkeiten</a></li><!--TODO newssite-->
+                    <li><a href="">Insider-Programm</a></li><!--TODO Insidersite-->
+                    <li><a href="">Digitales Artbook und Soundtrack</a></li><!--TODO Artworkside-->
                     <li><a href="">Mehr<!--TODO dropdown erweiterung "elternhandbuch"--></a></li>
                 </ul>
+                <div id="registry"><!--TODO bezeichnung abgleichen-->
+                    <a id="sign_up" href="">Registrieren</a><!--TODo registerpage-->
+                    <a id="preorder" href="">Vorbestellen</a><!--TODO vorbestellpage-->
+                </div>
             </nav>
-            <div id="registry">
-                <a href="">Registrieren</a>
-                <a href="">Vorbestellen</a>
+
+            <div id="side_nav">
+                <ul>
+                    <li><a href="#top">Lang lebe die Piraterie</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="">Vom Außenseiter zum berüchtigten Piratenkäpt´n</a></li>
+                    <li><a href="">Segle durch eine wunderschöne und doch tödliche Welt</a></li>
+                    <li><a href="">Segle mit oder gegen Freunde</a></li>
+                </ul>
             </div>
         </div>
 
-        <div id="side_nav"></div>
-        <img id="game_logo" src="" alt="">
-        <p id="head_anouncment">
-            Betritt das gefährliche Paradies von Bon 'n' Skulls. Überwinde alle Widrigkeiten
-            und steige vom Aussenseiter zum berüchtigten Piraten auf. Bone 'n' Skulls ist ab irgendwann überall
-            erhältlich.
-        </p>
-        <img id="pseudo_video" src="" alt="">
+        <div id="header_content">
+            <img id="game_logo"
+                src="https://images.unsplash.com/photo-1617004446721-f712c5897941?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt="">
+            <p id="head_anouncment">
+                Betritt das gefährliche Paradies von Bone'n'Skulls. Überwinde alle Widrigkeiten
+                und steige vom Außenseiter zum berüchtigten Piraten auf. Bone 'n' Skulls ist ab irgendwann überall
+                erhältlich.
+            </p>
+            <img id="pseudo_video"
+                src="https://images.unsplash.com/photo-1527685609591-44b0aef2400b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80"
+                alt="">
+        </div>
     </header>
     <!--gerald-->
     <article class="news" id="news">
@@ -143,6 +161,7 @@
                 <img src="https://cdn-icons-png.flaticon.com/128/4494/4494567.png">
             </a>
         </div>
+
         <div class="spalten">
             <div class="corporate">
                 <a href="">
@@ -178,6 +197,7 @@
                 </div>    
             </div>
         </div>    
+
     </footer>
 </body>
 
